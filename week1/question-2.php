@@ -29,6 +29,16 @@ function calculate($num1, $sign, $num2)
             $result = $num1 % $num2;
             echo "Result: $result";
             break;
+
+        case '^':
+            $result = pow($num1 , $num2);
+            echo "Result: $result";
+            break;
+
+        case 'percent_of':
+            $result = ($num1 * $num2) / 100;
+            echo "Result: $result";
+            break;
     } 
 }
 calculate(12, '%', 2);
